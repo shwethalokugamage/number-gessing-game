@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #0f0f0f;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: #1a1a1a;
+    padding: 60px 40px;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 420px;
+    width: 100%;
+    border: 1px solid #333;
+}
+
+h1 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 2.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+p {
+    color: #aaa;
+    margin-bottom: 40px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+input {
+    width: 100%;
+    padding: 16px;
+    margin-bottom: 25px;
+    border: 2px solid #333;
+    background: #252525;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    transition: all 0.2s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #ff6b35;
+    background: #2a2a2a;
+}
+
+input::placeholder {
+    color: #666;
+}
+
+button {
+    width: 100%;
+    padding: 16px;
+    background: #ff6b35;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    letter-spacing: 0.5px;
+}
+
+button:hover {
+    background: #ff5722;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+    background: #e64a19;
+}
+
+/* Remove number input spinner buttons */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
