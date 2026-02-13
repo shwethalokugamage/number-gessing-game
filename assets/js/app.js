@@ -11,6 +11,8 @@ function guess() {
             text: "Good Job Play Again!",
             icon: "success"
         });
+        randomNum=Math.floor(Math.random() *10) + 1;
+        console.log(randomNum)
     } else if (input.value > randomNum) {
         Swal.fire({
             title: "You lose!",
